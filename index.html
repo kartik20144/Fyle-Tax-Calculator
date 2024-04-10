@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Fyle</h1>
+    <div class="container">
+      <form action="">
+        <h2>Tax Calculator</h2>
+        <div class="gross">
+          <label for="gross-income">Enter gross annual income</label>
+          <input type="text" id="gross-income" />
+        </div>
+        <div class="extra">
+          <label for="extra-income">Enter extra income</label>
+          <input type="text" id="extra-income" />
+        </div>
+        <div class="age">
+          <label for="select-age" required>Enter age group</label>
+          <select name="selectage" id="select-age" required>
+            <option disabled selected value=""></option>
+            <option value="30"><40</option>
+            <option value="40">>=40 & <60</option>
+            <option value="10">>=60</option>
+          </select>
+        </div>
+        <div class="deductions">
+          <label for="decuction-income"
+            >Enter total applicable deductions</label
+          >
+          <input type="text" id="deduction-income" />
+        </div>
+        
+        
+       <input id="submit" type="submit">
+  
+        
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
