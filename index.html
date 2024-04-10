@@ -13,15 +13,22 @@
         <h2>Tax Calculator</h2>
         <div class="gross">
           <label for="gross-income">Enter gross annual income</label>
-          <input type="text" id="gross-income" />
+          <div class="inputField">
+          
+              <input type="text" id="gross-income" class="numberField" />
+              <span class="error-icon">!</span>
+              <div class="tooltip">Please enter numbers only</div>
+          </div>
         </div>
         <div class="extra">
           <label for="extra-income">Enter extra income</label>
-          <input type="text" id="extra-income" />
+          <input type="text" id="extra-income" class="numberField" />
+          <span class="error-icon">!</span>
+          <div class="tooltip">Please enter numbers only</div>
         </div>
         <div class="age">
           <label for="select-age" required>Enter age group</label>
-          <select name="selectage" id="select-age" required>
+          <select name="selectage" id="select-age" class="selectAge" required>
             <option disabled selected value=""></option>
             <option value="30"><40</option>
             <option value="40">>=40 & <60</option>
@@ -32,7 +39,9 @@
           <label for="decuction-income"
             >Enter total applicable deductions</label
           >
-          <input type="text" id="deduction-income" />
+          <input type="text" id="deduction-income" class="numberField" />
+          <span class="error-icon">!</span>
+          <div class="tooltip">Please enter numbers only</div>
         </div>
 
         <input id="submit" type="submit" />

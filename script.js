@@ -8,6 +8,42 @@ const form = document.querySelector("form")
 const cancelButton = document.getElementById("cancel");
 const dialog = document.getElementById("favDialog");
 
+const numberField = document.querySelectorAll(".numberField");
+
+numberField.forEach(field => {
+
+    const errorIcon = field.nextElementSibling;
+    const tooltip = errorIcon.nextElementSibling;
+
+    errorIcon.addEventListener('mouseover', () => {
+        tooltip.style.display = 'block'; 
+    });
+
+    errorIcon.addEventListener('mouseout', () => {
+        tooltip.style.display = 'none'; 
+    });
+
+    field.addEventListener("input", () => {
+        const value = field.value.trim();
+            const isValid = isValidNumber(value);
+            if(value ==''){
+                field.nextElementSibling.style.display = 'none'; 
+            }
+        if(isValid == false){
+            field.nextElementSibling.style.display = "inline-block";
+
+
+        }else {
+            field.nextElementSibling.style.display = 'none'; 
+        }
+    })
+})
+
+
+function isValidNumber(value){
+    if(value === "") return true;
+    return isNaN(value) === false && value !== '';
+}
 // console.log(rate);
 // submit.addEventListener("click", () => {
 //     setTimeout(() => {
