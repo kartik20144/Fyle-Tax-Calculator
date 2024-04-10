@@ -101,3 +101,24 @@ cancelButton.addEventListener("click", () => {
     dialog.close("animalNotChosen");
    
   });
+
+  const formFields = document.querySelectorAll('.form-field');
+
+    formFields.forEach(field => {
+        const questionIcon = field.querySelector('.question');
+        const newtooltip = field.querySelector('.newTooltip');
+    
+        questionIcon.addEventListener('mouseover', () => {
+            newtooltip.style.display = 'block'; // Show tooltip on hover
+        });
+    
+        questionIcon.addEventListener('mouseout', () => {
+            newtooltip.style.display = 'none'; // Hide tooltip when mouse leaves the question icon
+        });
+    });
+
+
+
+
+
+ 
