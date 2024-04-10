@@ -96,7 +96,7 @@ background: #2818b8;
     cursor: pointer;
     border: 2px solid red;
     border-radius: 200px;
-    transform: translate(-130%,20%);
+    transform: translate(-10%,20%);
 }
 .error-icon:hover + .tooltip{
     display: block;
@@ -115,4 +115,8 @@ background: #2818b8;
 .inputField{
 position: relative;
 
+}
+
+.submit{
+    
 }

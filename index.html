@@ -28,12 +28,14 @@
         </div>
         <div class="age">
           <label for="select-age" required>Enter age group</label>
-          <select name="selectage" id="select-age" class="selectAge" required>
+          <select name="selectage" id="select-age" class="selectAge">
             <option disabled selected value=""></option>
             <option value="30"><40</option>
             <option value="40">>=40 & <60</option>
             <option value="10">>=60</option>
           </select>
+          <span class="error-icon">!</span>
+          <div class="tooltip">This field is mandatory.</div>
         </div>
         <div class="deductions">
           <label for="decuction-income"
@@ -44,7 +46,7 @@
           <div class="tooltip">Please enter numbers only</div>
         </div>
 
-        <input id="submit" type="submit" />
+        <input id="submit" type="submit" class="submit"/>
       </form>
     </div>
 
