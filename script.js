@@ -5,6 +5,9 @@ const submit = document.querySelector("#submit");
 const rate = document.querySelector("#select-age").value;
 const form = document.querySelector("form")
 
+const cancelButton = document.getElementById("cancel");
+const dialog = document.getElementById("favDialog");
+
 // console.log(rate);
 // submit.addEventListener("click", () => {
 //     setTimeout(() => {
@@ -18,6 +21,12 @@ const extraIncome = document.getElementById("extra-income").value;
 const deductions = document.getElementById("deduction-income").value;
 const submit = document.querySelector("#submit");
 const rate = document.querySelector("#select-age").value;
+
+
+
+
+
+
     e.preventDefault();
     const netIncome = Number(grossIncome) + Number(extraIncome) - Number(deductions);
     
@@ -28,5 +37,12 @@ const rate = document.querySelector("#select-age").value;
     else{
         tax= (netIncome * rate )/100;
     }
-    console.log(tax);
+   
+document.getElementById("ans").value=netIncome-tax;
+    dialog.showModal()
 })
+
+cancelButton.addEventListener("click", () => {
+    dialog.close("animalNotChosen");
+   
+  });

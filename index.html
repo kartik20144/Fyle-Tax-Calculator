@@ -34,13 +34,23 @@
           >
           <input type="text" id="deduction-income" />
         </div>
-        
-        
-       <input id="submit" type="submit">
-  
-        
+
+        <input id="submit" type="submit" />
       </form>
     </div>
+
+    <dialog id="favDialog">
+      <div id="big">
+        <p1>Your overall income will be</p1>
+      </div>
+      <input type="text" id="ans" value="0" disabled />
+      <div id="small">
+        <p3>after tax decuctions</p3>
+      </div>
+      <div id="cancelButton">
+        <button id="cancel" type="reset">Okay</button>
+      </div>
+    </dialog>
 
     <script src="script.js"></script>
   </body>

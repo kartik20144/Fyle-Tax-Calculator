@@ -3,6 +3,14 @@ body{
     background: #f9f9f9;
 
 }
+
+#big{
+    font-size: 30px;
+}
+#small{
+    text-align: center;
+}
+
 h2{
     text-align: center;
     border-bottom: 2px solid green;
@@ -53,4 +61,27 @@ div{
 
 #submit:hover{
 background: #2818b8;
+}
+
+#cancel{
+
+ background: #0c37f5;
+ border-color: black;
+ box-shadow: 0  3px 3px grey;
+ color: white;
+ margin-top: 10px;
+ cursor: pointer;
+
+ padding: 5px;
+}
+#cancel:hover{
+    background: #2818b8;
+    }
+#cancelButton{
+    text-align: center;
+}
+
+#ans{
+    text-align: center;
+    font-size: 25px;
 }
